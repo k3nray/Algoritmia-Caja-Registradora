@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simulador de Caja Registradora</title>
+  <link rel="stylesheet" href="./simulado.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Simulador de Caja</h1>
+  </header>
+  
+<div class="card" >
+  <button onclick="mostrarEstadoCaja()"><strong>Estado de la Caja</strong></button><br><br>
+  <label for="precio">Precio del artículo (€):</label><br>
+  <input type="number" id="precio" step="0.01" /><br>
+  <h3>Dinero entregado:</h3>
+
+  <label for="billete500">Billetes de 500€:</label>
+  <input type="number" id="billete500" min="0" value="0" /><br>
+
+  <label for="billete200">Billetes de 200€:</label>
+  <input type="number" id="billete200" min="0" value="0" /><br>
+
+  <label for="billete100">Billetes de 100€:</label>
+  <input type="number" id="billete100" min="0" value="0" /><br>
+
+  <label for="billete50">Billetes de 50€:</label>
+  <input type="number" id="billete50" min="0" value="0" /><br>
+
+  <label for="billete20">Billetes de 20€:</label>
+  <input type="number" id="billete20" min="0" value="0" /><br>
+
+  <label for="billete10">Billetes de 10€:</label>
+  <input type="number" id="billete10" min="0" value="0" /><br>
+
+  <label for="billete5">Billetes de 5€:</label>
+  <input type="number" id="billete5" min="0" value="0" /><br>
+
+  <label for="moneda2">Monedas de 2€:</label>
+  <input type="number" id="moneda2" min="0" value="0" /><br>
+
+  <label for="moneda1">Monedas de 1€:</label>
+  <input type="number" id="moneda1" min="0" value="0" /><br>
+
+  <label for="moneda05">Monedas de 0.5€:</label>
+  <input type="number" id="moneda05" min="0" value="0" /><br>
+
+  <label for="moneda02">Monedas de 0.2€:</label>
+  <input type="number" id="moneda02" min="0" value="0" /><br>
+
+  <label for="moneda01">Monedas de 0.1€:</label>
+  <input type="number" id="moneda01" min="0" value="0" /><br>
+
+  <label for="moneda005">Monedas de 0.05€:</label>
+  <input type="number" id="moneda005" min="0" value="0" /><br>
+
+  <label for="moneda002">Monedas de 0.02€:</label>
+  <input type="number" id="moneda002" min="0" value="0" /><br>
+
+  <label for="moneda001">Monedas de 0.01€:</label>
+  <input type="number" id="moneda001" min="0" value="0" /><br><br>
+    <div class="button-group">
+      <button onclick="calcularCambioHTML()">Calcular cambio</button>
+      <button onclick="procesarPago()">Procesar pago</button>
+    </div>  
+  <h3>Resultado:</h3>
+  <pre id="resultado"></pre>
+
+  <script src="cajaRegistradora.js"></script>
+</div>
+</body>
+</html>
